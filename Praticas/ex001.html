@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h1>Testando a soma e média de valores</h1>
+   <input type="number" name="txt1" id="txt1"> +
+   <input type="number" name="txt2" id="txt2"> +
+   <input type="number" name="txt3" id="txt3">
+   <input type="button" value="Somar" onclick="somar()">
+   <div id="res">Resultado</div>
+
+        <script>
+            function somar(){
+
+                var tn1 = window.document.getElementById('txt1')
+                var tn2 = window.document.getElementById('txt2')
+                var tn3 = window.document.getElementById('txt3')
+                var res = window.document.getElementById('res')
+                var n1 = Number(tn1.value)
+                var n2 = Number(tn2.value)
+                var n3 = Number(tn3.value)
+                var s = n1 + n2 + n3
+                var media = (n1+n2+n3)/3
+                res.innerHTML = `A soma entre ${n1} e ${n2} e ${n3} é igual ${s} e a media desses números é: ${media}`
+                
+            }
+
+        </script>
+</body>
+</html>

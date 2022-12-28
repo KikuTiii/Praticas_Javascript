@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(155, 207, 207);
+        }
+    </style>
+</head>
+<body>
+     <h1> Desafio do curso em video #1</h1>
+     Em que país vc mora? <input type="text" name="escreva" id="escreva">
+     <input type="button" value="verificar">
+     <div id="res"></div>
+     
+     <script>
+            var país = document.getElementById(escreva) 
+            var res = document.getElementById(res)
+
+        if (nacionalidade != 'Brasil'){
+            document.write('voce é estrangeiro')
+        }else{
+            res.innerHTML += `Voce é brasileiro!`
+        }
+        
+     </script>
+
+</body>
+</html>
