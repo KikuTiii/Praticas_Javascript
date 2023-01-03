@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        var nota1 = Number(window.prompt('Coloque a primeira nota aqui: '))
+        var nota2 = Number(window.prompt('Coloque a segunda nota aqui: '))
+        media = (nota1+nota2)/2
+        
+        if(media == 10 ){
+            document.write(`Sua media foi ${media}, Portanto sua nota final foi "A"`)
+            window.alert('APROVADO!')
+        }else if(media >=7.5 && media <= 9){
+            document.write(`Sua media foi ${media}, portantanto sua nota final foi "B"`)
+            window.alert('APROVADO')
+        }else if(media >= 6.5 && media <=7){
+            document.write(`Sua nota foi ${media}, portanto sua nota final foi "C"`)
+            window.alert('APROVADO!')
+        }else if(media >=4 && media <=6){
+            document.write(`Sua media foi ${media}, portanto sua nota final foi "D"`)
+            window.alert('REPROVADO!')
+        }else if(media > 0 && media < 4 ){
+            document.write(`Sua nota foi ${media}, Portanto sua nota final foi: `)
+            window.alert('REPROVADO!')
+        }else{
+            document.write('[ERRO] Nota invalida.')
+        }
+        
+    </script>
+</body>
+</html>
